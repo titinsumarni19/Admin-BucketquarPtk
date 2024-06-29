@@ -30,7 +30,7 @@ dependencies:
   flutter_markdown: ^0.7.1
   dotted_border: ^2.0.0+3
   faker_dart: ^0.2.1
-  syncfusion_flutter_charts: ^25.1.35
+  syncfusion_flutter_charts: ^26.1.39
   qr_flutter: ^4.0.0
   path_provider: ^2.0.11
   flutter_animate: ^4.1.1+1
@@ -39,9 +39,8 @@ dependencies:
   flutter_inappwebview: ^6.0.0
   shared_preferences: ^2.2.1
   screenshot: ^3.0.0
-  syncfusion_flutter_calendar: ^25.1.35
+  syncfusion_flutter_calendar: ^26.1.39
   google_maps_flutter: ^2.6.0
-  dio_http2_adapter: ^2.5.2
 dev_dependencies:
   flutter_test:
     sdk: flutter

@@ -13,10 +13,10 @@ void main() async {
 
   // await UserProfileService().deleteAll();
 
-  var users = await UserProfileService().getAll();
-  for (var user in users) {
-    print(user["_id"] + " >> " + user["email"]);
-  }
+  // var users = await UserProfileService().getAll();
+  // for (var user in users) {
+  //   print(user["_id"] + " >> " + user["email"]);
+  // }
   runMainApp();
 }
 
