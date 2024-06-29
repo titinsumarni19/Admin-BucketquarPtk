@@ -7,7 +7,6 @@ download_file.dart
 icon_library.dart
 $null
 generate_common_snippet.dart
-README_SUPABASE.md
 
 *.class
 *.log

@@ -11,15 +11,3 @@ AppUser? get appCurrentUser {
     role: DBService.get("role")!,
   );
 }
-
-//@SUPABASE
-// Supabase Version
-// SupabaseClient get client => supabaseClient;
-// AppUser get appCurrentUser {
-//   var current = client.auth.currentUser;
-//   return AppUser(
-//     id: current!.id,
-//     email: current.email,
-//   );
-// }
-//:@SUPABASE

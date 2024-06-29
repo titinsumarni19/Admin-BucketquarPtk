@@ -57,8 +57,6 @@ extension MongoDBExtension on MongoDBClient {
     } else if (operator == ">") {
       return this.gt(fieldName, value);
     } else if (operator == ">=") {
-      //TODO: Kayaknya ada issue di library supabase-nya deh,
-      // <= bisa, tapi >= tidak bisa
       return this.gte(fieldName, fieldValue);
     } else if (operator == "!=") {
       return this.neq(fieldName, value);

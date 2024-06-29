@@ -15,7 +15,7 @@ class StreamGridList extends StatelessWidget {
     this.shrinkWrap = false,
   });
 
-  final Stream stream; // Menggunakan Stream untuk data Supabase
+  final Stream stream;
   final Function(Map<String, dynamic> item, int index)? itemBuilder;
   final Function(List<Map<String, dynamic>> items)? itemsBuilder;
   final Function(int itemCount)? listener;

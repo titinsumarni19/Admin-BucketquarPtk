@@ -7,8 +7,7 @@ class StreamDocument extends StatelessWidget {
     super.key,
   });
 
-  final Stream<Map<String, dynamic>?>
-      stream; // Stream dari Supabase, mungkin null jika dokumen tidak ada
+  final Stream<Map<String, dynamic>?> stream;
   final Function(Map<String, dynamic> item) itemBuilder;
 
   @override
