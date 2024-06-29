@@ -8,7 +8,6 @@ import 'dev_builder.dart';
 // https://res.cloudinary.com/dotz74j1p/raw/upload/v1716046071/lav8q7oo72hn1kdbtggm.png
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await initializeSupabase();
   await Diointerceptors.init();
   await DBService.init();
 

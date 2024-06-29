@@ -18,9 +18,6 @@ export 'package:hyper_ui/module/customer_list/controller/customer_list_controlle
 export 'package:hyper_ui/module/customer_list/view/customer_list_view.dart';
 export 'package:hyper_ui/module/dashboard/controller/dashboard_controller.dart';
 export 'package:hyper_ui/module/dashboard/view/dashboard_view.dart';
-export 'package:hyper_ui/module/dashboard/widget/transaction_card.dart';
-export 'package:hyper_ui/module/dashboard/widget/transaction_chart.dart';
-export 'package:hyper_ui/module/dashboard/widget/transaction_statistic_card.dart';
 export 'package:hyper_ui/module/main_navigation/controller/main_navigation_controller.dart';
 export 'package:hyper_ui/module/main_navigation/view/main_navigation_sidebar.dart';
 export 'package:hyper_ui/module/main_navigation/view/main_navigation_view.dart';
@@ -202,8 +199,6 @@ export 'package:hyper_ui/shared_app/util/driver/app_user.dart';
 export 'package:hyper_ui/shared_app/util/driver/driver.dart';
 export 'package:hyper_ui/shared_app/util/mongodb/mongodb.dart';
 export 'package:hyper_ui/shared_app/util/mongodb/mongodb_util.dart';
-export 'package:hyper_ui/shared_app/util/supabase/supabase.dart';
-export 'package:hyper_ui/shared_app/util/supabase/supabase_util.dart';
 export 'package:hyper_ui/shared_app/widget/app_logo/app_logo.dart';
 export 'package:hyper_ui/shared_app/widget/autocomplete/customer_autocomplete/controller/customer_autocomplete_controller.dart';
 export 'package:hyper_ui/shared_app/widget/autocomplete/customer_autocomplete/view/customer_autocomplete_view.dart';
@@ -241,6 +236,7 @@ export 'package:hyper_ui/shared_app/widget/checkfield/supplier_checkfield/contro
 export 'package:hyper_ui/shared_app/widget/checkfield/supplier_checkfield/view/supplier_checkfield_view.dart';
 export 'package:hyper_ui/shared_app/widget/checkfield/user_profile_checkfield/controller/user_profile_checkfield_controller.dart';
 export 'package:hyper_ui/shared_app/widget/checkfield/user_profile_checkfield/view/user_profile_checkfield_view.dart';
+export 'package:hyper_ui/shared_app/widget/dev/dev_sidebar_menu.dart';
 export 'package:hyper_ui/shared_app/widget/dropdown/customer_dropdown/controller/customer_dropdown_controller.dart';
 export 'package:hyper_ui/shared_app/widget/dropdown/customer_dropdown/view/customer_dropdown_view.dart';
 export 'package:hyper_ui/shared_app/widget/dropdown/order_transaction_dropdown/controller/order_transaction_dropdown_controller.dart';

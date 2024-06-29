@@ -4,7 +4,6 @@ import 'dart:math';
 import 'package:faker_dart/faker_dart.dart';
 import 'package:hyper_ui/core.dart';
 import 'package:hyper_ui/shared_app/util/driver/driver.dart';
-import 'package:hyper_ui/shared_app/util/supabase/supabase.dart';
 
 class RandomData {
   final _random = Random();
