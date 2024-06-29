@@ -2,7 +2,6 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 import 'package:hyper_ui/core.dart';
-import 'package:web_socket_client/web_socket_client.dart';
 
 final timeout = Duration(seconds: 1);
 final ping = Duration(seconds: 1);
