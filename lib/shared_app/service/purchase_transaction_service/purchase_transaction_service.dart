@@ -159,25 +159,4 @@ supplier!inner(*)
       throw Exception(err);
     }
   }
-
-  Future<num> getPurchaseTransactionTotalToday() async {
-    return await sumToday('purchase_transaction', 'total');
-  }
-
-  Future<num> getPurchaseTransactionTotalThisWeek() async {
-    return await sumThisWeek('purchase_transaction', 'total');
-  }
-
-  Future<num> getPurchaseTransactionTotalThisMonth() async {
-    return await sumThisMonth('purchase_transaction', 'total');
-  }
-
-  Future<num> getPurchaseTransactionTotalThisYear() async {
-    return await sumThisYear('purchase_transaction', 'total');
-  }
-
-  Future<List<Map<String, dynamic>>>
-      getPurchaseTransactionMonthlyChart() async {
-    return await monthlyChart('purchase_transaction', 'total');
-  }
 }

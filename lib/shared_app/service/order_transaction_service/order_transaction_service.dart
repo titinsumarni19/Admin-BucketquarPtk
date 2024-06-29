@@ -159,24 +159,4 @@ customer!inner(*)
       throw Exception(err);
     }
   }
-
-  Future<num> getOrderTransactionTotalToday() async {
-    return await sumToday('order_transaction', 'total');
-  }
-
-  Future<num> getOrderTransactionTotalThisWeek() async {
-    return await sumThisWeek('order_transaction', 'total');
-  }
-
-  Future<num> getOrderTransactionTotalThisMonth() async {
-    return await sumThisMonth('order_transaction', 'total');
-  }
-
-  Future<num> getOrderTransactionTotalThisYear() async {
-    return await sumThisYear('order_transaction', 'total');
-  }
-
-  Future<List<Map<String, dynamic>>> getOrderTransactionMonthlyChart() async {
-    return await monthlyChart('order_transaction', 'total');
-  }
 }
