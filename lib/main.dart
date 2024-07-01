@@ -63,6 +63,7 @@ class _MainAppState extends State<MainApp> {
         return null;
       },
       builder: (context, child) {
+        return child!;
         return DevBuilder(
           child: child,
         );
