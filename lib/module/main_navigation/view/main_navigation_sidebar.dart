@@ -52,7 +52,7 @@ class MainNavigationSidebar extends StatelessWidget {
                   SidebarMenuItem(
                     icon: MdiIcons.circleSmall,
                     label: "Chat",
-                    view: DashboardView(),
+                    view: ChatListView(),
                   ),
                   if (isAdmin && appMenuMasterDataItems.isNotEmpty)
                     SidebarHeaderItem(
