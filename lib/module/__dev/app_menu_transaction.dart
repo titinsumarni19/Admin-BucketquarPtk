@@ -13,6 +13,9 @@ List get appMenuMasterDataItems {
       items.add(item);
     }
   }
+
+  items.removeWhere((i) => i["label"] == "User Profile");
+  items.removeWhere((i) => i["label"] == "Supplier");
   return items;
 }
 
@@ -25,6 +28,8 @@ List get appMenuTransactionItems {
       items.add(item);
     }
   }
+
+  items.removeWhere((i) => i["label"] == "Purchase Transaction");
   return items;
 }
 

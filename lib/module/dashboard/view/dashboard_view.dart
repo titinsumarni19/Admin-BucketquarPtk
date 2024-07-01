@@ -3,6 +3,8 @@ import 'package:hyper_ui/core.dart';
 import 'package:syncfusion_flutter_charts/charts.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 
+import 'dashboard_statistic.dart';
+
 class DashboardView extends StatefulWidget {
   DashboardView({Key? key}) : super(key: key);
 
@@ -17,8 +19,43 @@ class DashboardView extends StatefulWidget {
       body: SingleChildScrollView(
         child: Container(
           padding: const EdgeInsets.all(20.0),
-          child: const Column(
-            children: [],
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                "Welcome back, ${currentUser?.userProfileName}",
+                style: TextStyle(
+                  fontSize: 20.0,
+                ),
+              ),
+              const SizedBox(
+                height: 20.0,
+              ),
+              Wrap(
+                runSpacing: 20,
+                spacing: 20,
+                children: [
+                  DashboardStatistic(
+                    label: "Products",
+                    icon: Icons.warehouse,
+                    color: Colors.orange,
+                    source: "product",
+                  ),
+                  DashboardStatistic(
+                    label: "Product Categories",
+                    icon: Icons.category,
+                    color: Color(0xff409485),
+                    source: "product_category",
+                  ),
+                  DashboardStatistic(
+                    label: "Orders",
+                    icon: Icons.sell,
+                    color: Color(0xffc52323),
+                    source: "order",
+                  ),
+                ],
+              ),
+            ],
           ),
         ),
       ),
