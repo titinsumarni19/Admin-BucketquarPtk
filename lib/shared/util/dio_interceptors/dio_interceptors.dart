@@ -20,10 +20,6 @@ class Diointerceptors {
           printo("URL: ${options.method} ${options.uri}");
           printo("Headers: ${options.headers}");
           printo("Request Body: ${options.data}");
-
-          printo("@RECORD: URL: ${options.method} ${options.uri}");
-          printo("@RECORD: Headers: ${options.headers}");
-          printo("@RECORD: Request Body: ${options.data}");
           print('----------------------');
           return handler.next(options);
         },
