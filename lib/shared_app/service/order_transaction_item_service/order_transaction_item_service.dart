@@ -130,11 +130,7 @@ product!inner(*,product_category!inner(*))
       ]).exec();
       var id = values.first['id'];
       lastInsertID = id;
-      calculateTotal(orderTransactionId!);
-      updateStock(
-        orderTransactionId: orderTransactionId,
-        productId: lastInsertID!,
-      );
+      calculateTotal(orderTransactionId);
 
       return values.first;
     } on Exception catch (err) {
@@ -172,11 +168,6 @@ product!inner(*,product_category!inner(*))
           .eq('id', id)
           .exec();
       calculateTotal(orderTransactionId!);
-      updateStock(
-        orderTransactionId: orderTransactionId,
-        productId: id,
-        currentQty: current["qty"],
-      );
 
       return response;
     } on Exception catch (err) {

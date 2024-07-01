@@ -117,11 +117,7 @@ product!inner(*,product_category!inner(*))
       ]).exec();
       var id = values.first['id'];
       lastInsertID = id;
-      calculateTotal(purchaseTransactionId!);
-      updateStock(
-        purchaseTransactionId: purchaseTransactionId,
-        productId: lastInsertID!,
-      );
+      calculateTotal(purchaseTransactionId);
 
       return values.first;
     } on Exception catch (err) {
@@ -153,11 +149,6 @@ product!inner(*,product_category!inner(*))
           .eq('id', id)
           .exec();
       calculateTotal(purchaseTransactionId!);
-      updateStock(
-        purchaseTransactionId: purchaseTransactionId,
-        productId: id,
-        currentQty: current["qty"],
-      );
 
       return response;
     } on Exception catch (err) {
@@ -226,32 +217,6 @@ product!inner(*,product_category!inner(*))
       await PurchaseTransactionService().update(
         id: purchaseTransactionId,
         total: total,
-      );
-    } on Exception catch (err) {
-      throw Exception(err);
-    }
-  }
-
-  Future<void> updateStock({
-    required String purchaseTransactionId,
-    required String productId,
-    int? currentQty = 0,
-  }) async {
-    try {
-      var item = await getPurchaseTransactionItemById(productId);
-      var product = await ProductService().getProductById(item!['product_id']);
-      var stock = product!['stock']! - currentQty + item['qty']!;
-
-      printg("Update stock");
-      printg("current: ${product["stock"]}");
-      printg("old order qty: ${currentQty}");
-      printg("new order qty: ${item['qty']}");
-      printg("new stock: ${stock}");
-      printg("--------------");
-
-      await ProductService().update(
-        id: item['product_id'],
-        stock: stock,
       );
     } on Exception catch (err) {
       throw Exception(err);
