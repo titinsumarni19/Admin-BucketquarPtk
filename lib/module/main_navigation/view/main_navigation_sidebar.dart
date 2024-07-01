@@ -49,6 +49,11 @@ class MainNavigationSidebar extends StatelessWidget {
                     label: "Dashboard",
                     view: DashboardView(),
                   ),
+                  SidebarMenuItem(
+                    icon: MdiIcons.circleSmall,
+                    label: "Chat",
+                    view: DashboardView(),
+                  ),
                   if (isAdmin && appMenuMasterDataItems.isNotEmpty)
                     SidebarHeaderItem(
                       title: "Master data",
