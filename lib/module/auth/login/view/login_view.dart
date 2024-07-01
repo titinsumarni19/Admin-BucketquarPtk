@@ -84,59 +84,59 @@ class LoginView extends StatefulWidget {
                                     color: primaryColor,
                                     onPressed: () => controller.login(),
                                   ),
-                                  const SizedBox(
-                                    height: 6.0,
-                                  ),
-                                  QButton(
-                                    label: "Register",
-                                    color: secondaryColor,
-                                    onPressed: () => Get.to(RegisterView()),
-                                  ),
+                                  // const SizedBox(
+                                  //   height: 6.0,
+                                  // ),
+                                  // QButton(
+                                  //   label: "Register",
+                                  //   color: secondaryColor,
+                                  //   onPressed: () => Get.to(RegisterView()),
+                                  // ),
                                 ],
                               ),
                             ),
                           ),
                         ).moveFromDownAndFade,
-                        const SizedBox(
-                          height: 12.0,
-                        ),
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          crossAxisAlignment: CrossAxisAlignment.center,
-                          children: [
-                            InkWell(
-                              onTap: () {
-                                controller.email = "admin@demo.com";
-                                controller.password = "123456";
-                                controller.login();
-                              },
-                              child: Text(
-                                "Admin",
-                                style: TextStyle(
-                                  fontSize: 16.0,
-                                  color: Colors.white,
-                                ),
-                              ),
-                            ),
-                            const SizedBox(
-                              width: 12.0,
-                            ),
-                            InkWell(
-                              onTap: () {
-                                controller.email = "user@demo.com";
-                                controller.password = "123456";
-                                controller.login();
-                              },
-                              child: Text(
-                                "User",
-                                style: TextStyle(
-                                  fontSize: 16.0,
-                                  color: Colors.white,
-                                ),
-                              ),
-                            ),
-                          ],
-                        ),
+                        // const SizedBox(
+                        //   height: 12.0,
+                        // ),
+                        // Row(
+                        //   mainAxisAlignment: MainAxisAlignment.center,
+                        //   crossAxisAlignment: CrossAxisAlignment.center,
+                        //   children: [
+                        //     InkWell(
+                        //       onTap: () {
+                        //         controller.email = "admin@demo.com";
+                        //         controller.password = "123456";
+                        //         controller.login();
+                        //       },
+                        //       child: Text(
+                        //         "Admin",
+                        //         style: TextStyle(
+                        //           fontSize: 16.0,
+                        //           color: Colors.white,
+                        //         ),
+                        //       ),
+                        //     ),
+                        //     const SizedBox(
+                        //       width: 12.0,
+                        //     ),
+                        //     InkWell(
+                        //       onTap: () {
+                        //         controller.email = "user@demo.com";
+                        //         controller.password = "123456";
+                        //         controller.login();
+                        //       },
+                        //       child: Text(
+                        //         "User",
+                        //         style: TextStyle(
+                        //           fontSize: 16.0,
+                        //           color: Colors.white,
+                        //         ),
+                        //       ),
+                        //     ),
+                        //   ],
+                        // ),
                       ],
                     ),
                   ),

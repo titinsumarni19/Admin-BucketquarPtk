@@ -30,7 +30,7 @@ class LoginController extends State<LoginView> {
   @override
   Widget build(BuildContext context) => widget.build(context, this);
 
-  String email = kDebugMode ? "user@demo.com" : "";
+  String email = kDebugMode ? "admin@demo.com" : "";
   String password = kDebugMode ? "123456" : "";
   GlobalKey<FormState> formKey = GlobalKey<FormState>();
 
