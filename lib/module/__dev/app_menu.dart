@@ -26,21 +26,6 @@ List get appMenuItems {
     },
     {
       "icon": MdiIcons.circleSmall,
-      "label": "Supplier",
-      "view": SupplierListView(),
-    },
-    {
-      "icon": MdiIcons.circleSmall,
-      "label": "Purchase Transaction",
-      "view": PurchaseTransactionListView(),
-    },
-    {
-      "icon": MdiIcons.circleSmall,
-      "label": "Purchase Transaction Item",
-      "view": PurchaseTransactionItemListView(),
-    },
-    {
-      "icon": MdiIcons.circleSmall,
       "label": "Order Transaction",
       "view": OrderTransactionListView(),
     },
